@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Alerts Feature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Price Alert System</h1>
+
+        <!-- Alert Input Section -->
+        <div class="alert-section">
+            <label for="alertPrice">Set Price Alert: </label>
+            <input type="number" id="alertPrice" placeholder="Enter Price Threshold" />
+            <button id="setAlertButton">Set Alert</button>
+        </div>
+
+        <!-- Price Display and Analysis -->
+        <div class="price-section">
+            <h2>Current Price: <span id="currentPrice">$0.00</span></h2>
+            <p id="priceAnalysis">Price Trend: <span id="trend">Stable</span></p>
+        </div>
+
+        <!-- Alert Notification -->
+        <div id="alertMessage" class="alert-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

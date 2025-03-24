@@ -1,0 +1,118 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #fff;
+    box-sizing: border-box;
+}
+
+/* Main container */
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Alert section styling */
+.alert-section {
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+/* Input field styling */
+input[type="number"] {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 60%;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #ff4757;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #e84118;
+}
+
+/* Price section styling */
+.price-section h2 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+
+#priceAnalysis {
+    font-size: 1.2rem;
+}
+
+/* Alert message styling */
+.alert-message {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6b81;
+    visibility: hidden;
+}
+
+/* Trend Colors */
+.up {
+    color: #2ecc71; /* Green for increasing */
+}
+
+.down {
+    color: #e74c3c; /* Red for decreasing */
+}
+
+.stable {
+    color: #f1c40f; /* Yellow for stable */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input[type="number"] {
+        width: 80%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
